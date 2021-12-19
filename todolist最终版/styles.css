@@ -1,0 +1,82 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.todolist-panel {
+    width: 30em;
+    min-height: 20em;
+    border: 1px solid #bbb;
+    box-shadow: 2px 2px 2px #bbb;
+    background-color: rgb(253, 232, 207);
+}
+/*标题样式*/
+#name {
+    text-align:center;
+    color: rgb(224, 184, 131);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 2em;
+    margin: 0.5em;
+}
+
+.input-pane {
+    display: flex;
+}
+
+.input-pane  input{
+    padding: 5px;
+    flex: 5 5 18em;
+    border-radius: 5px;
+}
+
+.input-pane, .list-pane {
+    padding: 1px 0.5em;
+}
+
+.list-pane > .todo-item {
+    display: flex;
+    margin: 0.75em 0;
+    padding: 0.75em;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.todo-item:hover,.important:hover{
+    background:rgb(209, 207, 207)
+}
+.todo-item.important{
+    background-color: #ccc;
+}
+
+.list-pane > .todo-item > .title {
+    flex: 1 1 10em;
+    word-break: break-all;
+}
+
+.important-flag {
+    width: 1.5em;
+    text-align: center;
+    border: 1px solid #bbb;
+    color: #ccc;
+    font-size: 1em;
+    font-weight: 900;
+    height: 1.5em;
+    user-select: none;
+}
+.important-flag:hover{
+    background: rgb(221, 204, 169);
+}
+.important-flag.open {
+    color: rgb(235, 117, 117)
+}
+
+.input-pane  #his-btn.open {
+    background-color: rgb(192, 188, 188);
+}
+
+.deletebtn{
+    width: 2em;
+    height: 2em;
+}
